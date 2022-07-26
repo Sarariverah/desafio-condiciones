@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condición-Stickers</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+
+<body>
+    <div class="limit">
+        <h2>Puedes llevar hasta 10 stickers en total</h2>
+    </div>
+    <div class="container">
+        <div class="box-sticker">
+            <img class="snoopy" src="assets/img/img1.jpeg" alt="#"> 
+            <label for="número de sticker">Nº Stickers</label>
+            <input tipe="number" id="input1">
+        </div>
+        <div class="box-sticker">
+            <img src="assets/img/img2.jpeg" alt="#"> 
+            <label for="número de sticker">Nº Stickers</label>
+            <input tipe="number" id="input2">
+        </div>
+        <div class="box-sticker">
+            <img src="assets/img/img3.jpeg" alt="#"> 
+            <label for="número de sticker">Nº Stickers</label>
+            <input tipe="number" id="input3">
+        </div> 
+    </div>
+    <div class="verificacion">
+        <p id="par"> </p>
+        <button onclick="
+            input1 = document.querySelector('#input1').value
+            input2 = document.querySelector('#input2').value
+            input3 = document.querySelector('#input3').value
+            par = document.querySelector('#par')
+            sumaInput = Number(input1) + Number(input2) + Number(input3)
+
+            if(sumaInput <= 10){
+                par.innerHTML = 'Llevas ' + sumaInput + ' stickers'
+            }
+
+            else{
+                par.innerHTML = 'Llevas demasiados stickers'
+            }
+
+        ">Verificar</button>
+    </div>
+  
+
+</body>
+
+</html>

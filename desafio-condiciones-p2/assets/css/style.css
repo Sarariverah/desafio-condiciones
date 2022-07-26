@@ -1,0 +1,32 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(255, 237, 104, 0.071);
+}
+
+.limit{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-sticker{
+    width: 250px;
+    height: 300px;
+    background-color: rgba(186, 186, 186, 0.27);
+    padding: 15px;
+    margin: 5px;
+}
+
+.box-sticker img{
+    width: 90%;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.verificacion{
+    text-align: center;
+}

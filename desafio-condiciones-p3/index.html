@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condición-Select</title>
+</head>
+
+<body>
+    <h2>Ingresa el password</h2>
+    <select name="" id="select1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <select name="" id="select2">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <select name="" id="select3">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <p id="par"></p>
+    <button onclick="
+        select1 = document.querySelector('#select1').value
+        select2 = document.querySelector('#select2').value
+        select3 = document.querySelector('#select3').value
+        par = document.querySelector('#par')
+
+        if(select1 == 9 && select2 == 1 && select3 == 1){
+            par.innerHTML = 'Password 1 es correcta'
+        }
+
+        else if(select1 == 7 && select2 == 1 && select3 == 4){
+            par.innerHTML = 'Password 2 es correcta'
+        }
+
+        else{
+            par.innerHTML = 'Password es incorrecta'
+        }
+        
+    ">Ingresar
+    </button>
+</body>
+
+</html>
